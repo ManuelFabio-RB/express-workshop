@@ -6,14 +6,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManuelFabio-RB/express-workshop.git"
+  },
   "keywords": [
-    "api",
-    "rest",
+    "node",
     "express",
-    "node.js"
+    "jwt",
+    "mysql"
   ],
   "author": "Manuel Fabio",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManuelFabio-RB/express-workshop/issues"
+  },
+  "homepage": "https://github.com/ManuelFabio-RB/express-workshop#readme",
   "dependencies": {
     "express": "^4.18.2"
   }
