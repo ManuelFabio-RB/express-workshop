@@ -2,14 +2,7 @@ const morgan = require('morgan')
 const express = require('express')
 const app = express()
 const pokemon = require('./routes/pokemon')
-/**
- * Verbos HTTP
- * GET --> Obtener recursos
- * POST --> Almacenar recursos
- * PATCH --> Modificar una parte de un recurso
- * PUT --> Modificar un recurso
- * DELETE -> Eliminar recursos  
- */
+const usuario = require('./routes/usuario')
 
 app.use(morgan('dev'))
 app.use(express.json())
@@ -20,6 +13,7 @@ app.get("/", (req, res, next)=>{
 })
 
 app.use("/pokemon", pokemon )
+app.use("/usuario", usuario)
 
 app.use((req, res, next) =>{
     return res.status(404).json({code: 404, message: "URL no encontrada"})
