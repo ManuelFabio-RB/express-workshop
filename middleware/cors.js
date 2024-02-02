@@ -8,5 +8,5 @@ module.exports = (req, res, next) => {
         res.header("Access-Control_Allow_Methods", "PUT, POT; PATCH, DELETE, GET")
         return res.status(200).json({})
     }
-        
+    next()  
 }
